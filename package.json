@@ -6,7 +6,7 @@
   "scripts": {
     "install-all": "npm install --prefix backend && npm install --prefix client",
     "build": "npm run build --prefix client",
-    "start": "npm run start --prefix backend",
+    "start": "node backend/index.js",
     "heroku-postbuild": "npm run build --prefix client"
   },
   "keywords": [],

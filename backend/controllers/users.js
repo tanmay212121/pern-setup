@@ -5,9 +5,10 @@ const saltRounds = 10;
 
 exports.createUser = async (req, res) => {
   const { username, email, password } = req.body;
+  console.log("username", username, email, password)
   try {
-    const hashedPassword = await bcrypt.hash(password, saltRounds);
-    const user = await User.create({ username, email, password: hashedPassword });
+    // const hashedPassword = await bcrypt.hash(password, saltRounds);
+    const user = await User.create({ username, email, password });
     res.status(201).json(user);
   } catch (err) {
     console.error(err);

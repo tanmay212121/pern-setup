@@ -3,6 +3,9 @@ backend/package-lock.json
 backend/.env
 
 client/node_modules
+client/.env
+client/.env.production
+
 client/package-lock.json
 package-lock.json
 node_modules

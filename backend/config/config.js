@@ -10,7 +10,7 @@ module.exports = {
     dialect: 'postgres'
   },
   production: {
-    use_env_variable: 'postgresql://pern2nd_testdb_user:vzzwENRTNWCgax2rxWz7SlKLUtJd2c2G@dpg-cpnfu408fa8c73b0llo0-a.oregon-postgres.render.com/pern2nd_testdb',
+    use_env_variable: 'DATABASE_URL',
     dialect: 'postgres'
   }
 };
